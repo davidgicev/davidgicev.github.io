@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-photo" style="background-image: url(profile.png);"></div>
+            <h1>David Gichev</h1>
+            <h3>Master's student at TUM</h3>
+            <div class="links">
+                <a href="https://github.com/davidgicev" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/david-gicev-41719623a/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="resume.pdf" target="_blank">
+                    <i class="fas fa-file-alt"></i> Resume
+                </a>
+                <a href="#projects">
+                    <i class="fas fa-briefcase"></i> Portfolio
+                </a>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <!-- <h2>Projects</h2> -->
+            <div class="project">
+                <div class="project-left">
+                </div>
+                <div class="project-body">
+                    <h3>Optimizing and Benchmarking the Storage and Processing of Short-Read Genomic Sequencing Data from Wastewater</h3>
+                    <h4>Interdisciplinary project (ETHZ)</h4>
+                    <ul>
+                        <li>improved storage and performance of existing indexing engine for large genomic data (SILO)</li>
+                        <li>adapted system for sparse sequences, reducing memory usage by more than 100x from baseline</li>
+                        <li>extensive work with C++, Roaring bitmap indexes; presented findings at WISE symposium</li>
+                    </ul>
+                </div>
+                <div class="project-right">
+                    <div class="project-photo" style="background-image: url(igv.png);"></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-left">
+                </div>
+                <div class="project-body">
+                    <h3>URL Shortener</h3>
+                    <h4>Project for “Cloud-based data processing” (TUM)</h4>
+                    <ul>
+                        <li>implemented RAFT in Rust, with each node utilizing a multi-threaded architecture supported by gRPC and protobuf for communication, LSM for log storage</li>
+                        <li>deployed using docker, performed extensive benchmarking and experimentation</li>
+                    </ul>
+                </div>
+                <div class="project-right">
+                    <div class="project-photo" style="background-image: url(cloud.png);"></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-left">
+                </div>
+                <div class="project-body">
+                    <h3>Face reconstruction</h3>
+                    <h4>(Team) Project for “3D Scanning and Motion Capture” (TUM)</h4>
+                    <ul>
+                        <li>analysis by synthesis approach using parameterized face model optimized with Ceres</li>
+                        <li>written in C++, experimented with facial expression transfer and modification</li>
+                        <li>worked on setting up and tuning sparse/dense terms, visualization in OpenGL</li>
+                    </ul>
+                </div>
+                <div class="project-right">
+                    <div class="project-photo" style="background-image: url(face.png);"></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-left">
+                </div>
+                <div class="project-body">
+                    <h3>Distributed real-time chat platform</h3>
+                    <h4>Bachelor’s Thesis (FSCE)</h4>
+                    <ul>
+                        <li>implemented eventually-consistent prototype messaging platform which is partially decentralized: clients can communicate peer-to-peer, while a centralized server functions as a backup</li>
+                        <li>designed and implemented protocols for synchronizing the relational (client) database states and non-relational (server) database state using Merkle trees for reconciliation</li>
+                    </ul>
+                </div>
+                <div class="project-right">
+                    <div class="project-photo" style="background-image: url(thesis.png);"></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-left">
+                </div>
+                <div class="project-body">
+                    <h3>Reinforcement learning: Custom multi-agent snake environment</h3>
+                    <h4>Project for “Agent-based systems” (FSCE)</h4>
+                    <ul>
+                        <li>developed custom multi-agent snake environment (OpenAI gym)</li>
+                        <li>tested applicability of Q-learning and Deep Q-learning algorithm (with experience replay)</li>
+                        <li>involves experimentation with state representation, reward systems, memory sampling and more</li>
+                    </ul>
+                </div>
+                <div class="project-right">
+                    <div class="project-photo" style="background-image: url(snake.png);"></div>
+                </div>
+            </div>
+            <div class="project project-dark">
+                <div class="project-left">
+                </div>
+                <div class="project-body">
+                    <h3>Parallelization of the Barnes-Hut algorithm for gravitational n-body simulations</h3>
+                    <h4>Project for “Parallel and distributed computing (FSCE)”</h4>
+                    <ul>
+                        <li>implemented the Barnes-Hut algorithm, both its sequential and proposed parallel version</li>
+                        <li>written in C++, using the Open MPI interface, also developed GUI for visualization</li>
+                        <li>includes k-d trees, space filling curves, parallel message exchange and synchronization</li>
+                    </ul>
+                </div>
+                <div class="project-right">
+                    <div class="project-photo" style="background-image: url(pidp.jpeg);"></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-left">
+                </div>
+                <div class="project-body">
+                    <h3>Smoothex: Highly interactive graphing calculator</h3>
+                    <h4>Personal passion project, reminiscent of Desmos”</h4>
+                    <ul>
+                        <li>source code available on github, deployed on github pages (try it out)</li>
+                        <li>built from scratch with vanilla javascript, comes with custom formula editor</li>
+                        <li>uses numerical methods, interval arithmetic, Pratt parsing, custom code ordering</li>
+                    </ul>
+                </div>
+                <div class="project-right">
+                    <div class="project-photo" style="background-image: url(smoothex.png);"></div>
+                </div>
+            </div>
+
+            <div class="project project-dark" style="background-color: rgb(0,0,59);">
+                <div class="project-left">
+                </div>
+                <div class="project-body">
+                    <h3>AQUAS</h3>
+                    <h4>Simulation of marine life done towards end of high school</h4>
+                    <ul>
+                        <li>an AQUAtic Simulation of simple marine life which uses evolutionary algorithms</li>
+                        <li>the fish operate with neural networks whose parameters are optimized by way of mutations and evolution</li>
+                        <li>try it out!</li>
+                    </ul>
+                </div>
+                <div class="project-right">
+                    <div class="project-photo" style="background-image: url(aquas.png);"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+

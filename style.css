@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    padding-bottom: 1em;
+}
+
+.header h3 {
+    font-weight: 400;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+.links {
+    display: flex;
+    gap: 10px;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+.links a {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s;
+    scroll-behavior: smooth;
+}
+
+.links a i {
+    margin-right: 6px;
+    font-size: 1rem;
+}
+
+.links a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.projects {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: lightgray 2px dashed;
+}
+
+.project-dark {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.project-left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.project-body {
+    flex: 3;
+    text-align: left;
+    padding-right: 5em;
+}
+
+.project-right {
+    flex: 2;
+    padding-right: 5em;
+}
+
+.project-photo {
+    width: 40vw;
+    height: 40vh;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-thumbnail {
+    width: 10em;
+    height: 1em;
+    margin-right: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.project h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.project-dark h3 {
+    color: #ddd
+}
+
+.project h4 {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project-dark h3 {
+    color: #eee
+}
+
+.project p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.project ul li {
+    margin-bottom: 5px;
+}
