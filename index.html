@@ -17,7 +17,7 @@
                 <a href="https://github.com/davidgicev" target="_blank">
                     <i class="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://linkedin.com/in/david-gicev-41719623a/" target="_blank">
+                <a href="https://www.linkedin.com/in/david-gichev/" target="_blank">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
                 <a href="resume.pdf" target="_blank">
@@ -37,10 +37,13 @@
                     <h3>Optimizing and Benchmarking the Storage and Processing of Short-Read Genomic Sequencing Data from Wastewater</h3>
                     <h4>Interdisciplinary project (ETHZ)</h4>
                     <ul>
-                        <li>improved storage and performance of existing indexing engine for large genomic data (SILO)</li>
+                        <li>improved storage and performance of existing indexing engine for large genomic data (<a href="https://github.com/GenSpectrum/LAPIS-SILO">SILO</a>)</li>
+                        <li>optimized aggregation operator to work without redundant indexes being available, in turn allowing 80% savings</li>
                         <li>adapted system for sparse sequences, reducing memory usage by more than 100x from baseline</li>
-                        <li>extensive work with C++, Roaring bitmap indexes; presented findings at WISE symposium</li>
+                        <li>extensive work with C++, Roaring bitmap indexes; presented findings at <a href="https://fgcz.ch/research/projects/wise.html">WISE</a> symposium</li>
                     </ul>
+                    <br><br><br>
+                    <h4>Topics: Indexing and query processing, C++, Roaring bitmaps, index compression, bioinformatics</h4>
                 </div>
                 <div class="project-right">
                     <div class="project-photo" style="background-image: url(igv.png);"></div>
@@ -54,8 +57,10 @@
                     <h4>Project for “Cloud-based data processing” (TUM)</h4>
                     <ul>
                         <li>implemented RAFT in Rust, with each node utilizing a multi-threaded architecture supported by gRPC and protobuf for communication, LSM for log storage</li>
-                        <li>deployed using docker, performed extensive benchmarking and experimentation</li>
+                        <li>deployed using docker, performed extensive benchmarking and experimentation with different node configurations</li>
                     </ul>
+                    <br><br><br>
+                    <h4>Topics: Distributed systems, C++, gRPC/protobuf, LSM, multi-threading, concurrency, consensus</h4>
                 </div>
                 <div class="project-right">
                     <div class="project-photo" style="background-image: url(cloud.png);"></div>
@@ -72,6 +77,8 @@
                         <li>written in C++, experimented with facial expression transfer and modification</li>
                         <li>worked on setting up and tuning sparse/dense terms, visualization in OpenGL</li>
                     </ul>
+                    <br><br><br>
+                    <h4>Topics: Computer vision, optimization, C++, OpenGL pipeline</h4>
                 </div>
                 <div class="project-right">
                     <div class="project-photo" style="background-image: url(face.png);"></div>
@@ -87,6 +94,8 @@
                         <li>implemented eventually-consistent prototype messaging platform which is partially decentralized: clients can communicate peer-to-peer, while a centralized server functions as a backup</li>
                         <li>designed and implemented protocols for synchronizing the relational (client) database states and non-relational (server) database state using Merkle trees for reconciliation</li>
                     </ul>
+                    <br><br><br>
+                    <h4>Topics: Distributed systems, synchronization, consensus, web development, typescript/node.js</h4>
                 </div>
                 <div class="project-right">
                     <div class="project-photo" style="background-image: url(thesis.png);"></div>
@@ -103,12 +112,14 @@
                         <li>tested applicability of Q-learning and Deep Q-learning algorithm (with experience replay)</li>
                         <li>involves experimentation with state representation, reward systems, memory sampling and more</li>
                     </ul>
+                    <br><br><br>
+                    <h4>Topics: Machine learning, python</h4>
                 </div>
                 <div class="project-right">
                     <div class="project-photo" style="background-image: url(snake.png);"></div>
                 </div>
             </div>
-            <div class="project project-dark">
+            <div class="project project-dark" id="space">
                 <div class="project-left">
                 </div>
                 <div class="project-body">
@@ -119,6 +130,8 @@
                         <li>written in C++, using the Open MPI interface, also developed GUI for visualization</li>
                         <li>includes k-d trees, space filling curves, parallel message exchange and synchronization</li>
                     </ul>
+                    <br><br><br>
+                    <h4>Topics: Parallel processing, C++, Open MPI, data ordering and partitioning</h4>
                 </div>
                 <div class="project-right">
                     <div class="project-photo" style="background-image: url(pidp.jpeg);"></div>
@@ -131,7 +144,7 @@
                     <h3>Smoothex: Highly interactive graphing calculator</h3>
                     <h4>Personal passion project, reminiscent of Desmos”</h4>
                     <ul>
-                        <li>source code available on github, deployed on github pages (try it out)</li>
+                        <li>source code available on github, deployed on github pages <a href="https://davidgicev.github.io/smoothex/">(try it out)</a></li>
                         <li>built from scratch with vanilla javascript, comes with custom formula editor</li>
                         <li>uses numerical methods, interval arithmetic, Pratt parsing, custom code ordering</li>
                     </ul>
@@ -150,7 +163,7 @@
                     <ul>
                         <li>an AQUAtic Simulation of simple marine life which uses evolutionary algorithms</li>
                         <li>the fish operate with neural networks whose parameters are optimized by way of mutations and evolution</li>
-                        <li>try it out!</li>
+                        <li><a href="https://davidgicev.github.io/AQUAS/">try it out!</a></li>
                     </ul>
                 </div>
                 <div class="project-right">
